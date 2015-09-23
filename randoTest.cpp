@@ -29,9 +29,32 @@ TEST(RandoTest, allChildrenSmile)
 	ASSERT_TRUE( rando.shouldWorry(true,true,true) );
 }
 
+TEST(RandoTest, twoChildrenSmile)
+{
+        Rando rando;
+        ASSERT_TRUE( rando.shouldWorry(true,false,true) );
+}
+
+TEST(RandoTest, oneChildSmile)
+{
+        Rando rando;
+        ASSERT_TRUE( rando.shouldWorry(false,true,false) );
+}
+TEST(RandoTest, notAllChildrenSmile)
+{
+        Rando rando;
+        ASSERT_TRUE( rando.shouldWorry(false,false,false) );
+}
+
 TEST(RandoTest, evenNumbers)
 {
         Rando rando;
         ASSERT_TRUE( rando.isDivisbleBy(4,2) );
+}
+
+TEST(RandoTest, oddNumbers)
+{
+        Rando rando;
+        ASSERT_TRUE( rando.isDivisbleBy(7,5) );
 }
 
