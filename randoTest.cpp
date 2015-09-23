@@ -58,3 +58,11 @@ TEST(RandoTest, oddNumbers)
         ASSERT_TRUE( rando.isDivisbleBy(7,5) );
 }
 
+
+TEST(RandoTest, primeNumbers)
+{
+        Rando rando;
+        ASSERT_TRUE( rando.isPrime(7) );
+}
+
+

@@ -1,5 +1,5 @@
 #include "rando.h"
-//#include <stdlib.h>
+#include <stdlib.h>
 
 
 /**
@@ -32,17 +32,17 @@ bool Rando::isDivisbleBy(int first, int second)
 **/
 bool Rando::isPrime(int num)
 {
-/*   bool prime
+   bool prime;
 
     for(int i = 3; i <= num; i++){
        prime = true;
-       for(int n = 2; n <= i - 1; n++){
-               if(i % n == 0){
+       for (int n = 2; n <= i - 1; n++){
+               if (i % n == 0)
                    prime = false;
        }
     }
-	return prime;*/
-  return true;
+	
+     return prime;
 }
 
 /**
