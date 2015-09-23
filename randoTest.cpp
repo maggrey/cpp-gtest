@@ -65,4 +65,35 @@ TEST(RandoTest, primeNumbers)
         ASSERT_TRUE( rando.isPrime(7) );
 }
 
+TEST(RandoTest, numberNine)
+{
+        Rando rando;
+        ASSERT_TRUE( rando.isPrime(9) );
+}
+
+TEST(RandoTest, aLessThanB)
+{
+        Rando rando;
+        if(rando.nearestToZero(1,13) != 0)
+           ASSERT_TRUE(true );
+        else
+           ASSERT_TRUE(false);
+}
+
+TEST(RandoTest, bIsZero)
+{
+        Rando rando;
+        if(rando.nearestToZero(1,0) != 0)
+           ASSERT_TRUE(true );
+        else
+           ASSERT_TRUE(false);
+}
+TEST(RandoTest, bIsNegative)
+{
+        Rando rando;
+        if(rando.nearestToZero(1,-1) != 0)
+           ASSERT_TRUE(true );
+        else
+           ASSERT_TRUE(false);
+}
 
