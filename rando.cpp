@@ -19,7 +19,10 @@ bool Rando::shouldWorry(bool childASmile, bool childBSmile, bool childCSmile)
 **/
 bool Rando::isDivisbleBy(int first, int second)
 {
-	return false;
+     if(first%second == 0)
+        return true;
+     else
+  	return false;
 }
 
 /**
@@ -29,7 +32,17 @@ bool Rando::isDivisbleBy(int first, int second)
 **/
 bool Rando::isPrime(int num)
 {
-	return true;
+/*   bool prime
+
+    for(int i = 3; i <= num; i++){
+       prime = true;
+       for(int n = 2; n <= i - 1; n++){
+               if(i % n == 0){
+                   prime = false;
+       }
+    }
+	return prime;*/
+  return true;
 }
 
 /**
